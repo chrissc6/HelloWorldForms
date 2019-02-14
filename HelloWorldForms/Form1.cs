@@ -16,5 +16,19 @@ namespace HelloWorldForms
         {
             InitializeComponent();
         }
+
+        public int x = 0;
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            x--;
+            message.Text = $"{x}";
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //different way
+            message.Text = (++x).ToString();
+        }
     }
 }
